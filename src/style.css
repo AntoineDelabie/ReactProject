@@ -1,0 +1,84 @@
+.mainComponent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+img:hover {
+    animation: myAnimIMG 1s ease 0s infinite normal forwards;
+
+}
+
+@keyframes myAnimIMG {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card:hover {
+    animation: myAnim 4s ease 0s infinite normal forwards;
+
+}
+
+.recette {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.card {
+    border: 2px solid rgb(14, 9, 62);
+    background-color: azure;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 600px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
